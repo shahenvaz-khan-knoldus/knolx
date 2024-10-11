@@ -1,0 +1,6 @@
+region="us-east-1"
+bucket_name="knolxdemo"
+index_document="index.html"
+error_document="error.html"
+index_file_path="./index.html"
+error_file_path="./error.html"
