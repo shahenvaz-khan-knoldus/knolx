@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: knolx-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: knolx-deployment
+  template:
+    metadata:
+      labels:
+        app: knolx-deployment
+    spec:
+      containers:
+      - name: knolx-deployment
+        image: shahenvaz7/knolx:2.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
